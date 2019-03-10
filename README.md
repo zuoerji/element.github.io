@@ -36,3 +36,4 @@
  1、引入 better-iscroll
  2、设置 better-iscroll 的初始化绑定 ref 设置的 DOM 元素
 ```
+> 这个是创建分支后提交的代码
