@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+// function fn() {
+//       console.log('foo');
+//       setTimeout(g,0);
+//       Promise.resolve('hello').then(
+//         function(res) {
+//           console.log(res + 'world');
+//           
+//         },function(res) {
+//           console.log(res + 'fun');
+//           
+//         }
+//       );
+//   console.log('bar');
+//   h()
+// }
+//     function g() {
+//       console.log('high');
+//     };
+//     function h() {
+//       console.log('time');
+//     }
+//     fn()
+
+    // 第一个结果是： foo  foo
+    // 第二个结果是： helloworld bar
+    // 第三个结果是： bar  time
+    // 第四个结果是： time  helloword
+    // 第五个结果是： hight hight
+
+//     const getA = new Promise((resolve, reject) => {
+//    //模拟异步任务
+//    setTimeout(function(){
+//      resolve(2);
+//     }, 1000) 
+//     })
+//     .then(result => result)
+//     .catch(e => e);
+
+//     const getB = new Promise((resolve, reject) => {
+//     setTimeout(function(){
+//         resolve(3);
+//     }, 1000) 
+//     })
+//     .then(result => result)
+//     .catch(e => e);
+
+//     function addAB(a,b){
+//         return a+b
+//     }
+
+//     Promise.all([getA, getB]).then(data=>{
+//         return addAB(data[0],data[1]);
+//     })
+//     .then(result=>{
+//         console.log(result)
+//     })
+//     .catch(e => console.log(e));
+
+        setTimeout(() => {
+
+        console.log(0)
+
+        })
+
+        new Promise(resolve => {
+
+        resolve(1)
+
+        Promise.resolve().then(t => {
+
+        console.log(2)
+
+        })
+
+        console.log(3)
+
+        })
+
+        .then(t => {
+
+        console.log(t)
+
+        })
+
+        console.log(4)
+
+</script>
+</html>

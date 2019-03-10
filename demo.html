@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    // 面向对象 ES5 的写法
+    // function Person(name,age){
+    //     this.name = name;
+    //     this.age = age;
+    // }
+    // Person.prototype.showName = function(){
+    //     alert('名字是'+this.name)
+    // }
+    // Person.prototype.showAge = function(){
+    //     alert('年龄是'+this.age)
+    // }
+    // var p1 = new Person("张三",15);
+    // p1.showAge();
+    // p1.showName();
+    // 面向对象 ES6 的写法
+    // class Person {
+    //     constructor(name,pass){
+    //         this.name = name;
+    //         this.pass = pass;
+    //     }
+    //     showName(){
+    //         alert(this.name)
+    //     }
+    //     showPass(){
+    //         alert(this.pass)
+    //     }
+    // }
+    // let P1 = new Person("上三",123456);
+    // P1.showName()
+    // P1.showPass()
+    // 面向对象继承的写法  ES5
+    // function User(name,age){
+    //     this.name = name;
+    //     this.age = age;
+    // }
+    // User.prototype.showName = function(){
+    //     alert("名字是："+this.name)
+    // }
+    // User.prototype.showAge  = function(){
+    //     alert("年龄是："+this.age)
+    // }
+    // function Person(name,age,level){
+    //     User.call(this,name,age);
+    //     this.level = level;
+    // }
+    // Person.prototype = new User();
+    // Person.prototype.constructor = Person;
+    // Person.prototype.showLevel = function(){
+    //     alert("级别是："+this.level)
+    // }
+    // var l1 = new Person("李四",16,4);
+    // l1.showLevel();
+    // 面向对象继承 ES6
+    // class Person {
+    //     constructor(name,pass){
+    //         this.name = name;
+    //         this.pass = pass;
+    //     }
+    //     showName(){
+    //         alert(this.name)
+    //     }
+    //     showPass(){
+    //         alert(this.pass)
+    //     }
+    // }
+    // class VIPUser extends Person{
+    //     constructor(name,pass,level){
+    //         super(name,pass);
+    //         this.level = level;
+    //     }
+    //     showLevel(){
+    //         alert(this.level);
+    //     }
+    // }
+    // let v1 = new VIPUser("王五",54,9)
+    // v1.showName();
+    // v1.showPass();
+    // v1.showLevel();
+</script>
+</html>
