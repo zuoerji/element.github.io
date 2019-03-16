@@ -12,7 +12,34 @@
     // var body = document.getElementsByTagName('body');
     // oP.innerHTML = 'hello world';
     // body[0].appendChild(oP);
-    var reg = /^[1-9][0-9]{4}$/
-    console.log(reg.test(10.00))
+    // var reg = /^[1-9][0-9]{4}$/
+    // console.log(reg.test(10.00))
+
+
+ var test = function (a) {
+      this.a = a;
+      // console.log(this.a);
+
+      return function (b) {
+        return this.a + b;
+      }
+    }
+      (function (a, b) {
+        return a;
+        // console.log(a);
+
+      }(1, 2));
+
+      // function fn(a, b) {
+      //   console.log(a);
+      //   console.log(b)
+      //   // console.log(a);
+
+      // }(1, 2)
+
+
+    console.log(test(4));// 4
+
+
 </script>
 </html>
