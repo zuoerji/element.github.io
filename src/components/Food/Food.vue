@@ -1,6 +1,6 @@
 <template>
     <div v-show="showFlag" class="food">
-        food
+        food{{food}}
     </div>
 </template>
 <script>
@@ -13,6 +13,11 @@ export default {
     data(){
         return {
             showFlag:false
+        }
+    },
+    methods:{
+        show(){
+            this.showFlag = true
         }
     }
 }
